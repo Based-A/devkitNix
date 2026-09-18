@@ -46,6 +46,8 @@
               tar -xf $archive
             done
 
+            rm -rf opt/devkitpro/pacman/var/lib/pacman/local
+
             mkdir -p $out
             cp -r opt $out/opt
             ln -sf $out/opt/devkitpro/tools/bin $out/bin
